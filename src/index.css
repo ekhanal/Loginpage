@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Basic styling for the main container */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+/* Styling for the headings */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Styling for the author's name */
+.author-name {
+    font-size: 1.2em;
+    /* font-weight: bold; */
+}
+
+/* Styling for the blog detail */
+.blog-detail {
+    margin-top: 10px;
+    color: #666; /* Adjust the color as needed */
+}
+
+
+
+
